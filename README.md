@@ -1,49 +1,73 @@
 # Practical Java
 
-A collection of Java hands-on practices, experiments, and small programs for building and strengthening core Java skills.
+A collection of Java hands-on practices, experiments, and small console applications for building and strengthening core Java skills.
 
 ## What This Repository Covers
 
-- Java syntax and fundamentals
-- Variables, data types, and input handling
-- Conditional statements and switch expressions
+- Java syntax, variables, and data types
+- User input with `Scanner`
+- Conditional statements and grading logic
+- Login and access-control checks
 - Classes, objects, and basic object-oriented programming
-- Small console-based applications and logic exercises
+- Collections such as `ArrayList` and `HashSet`
+- Input validation and formatted console reports
+- Student records, course scores, weighted averages, grades, and GPA calculations
 - Maven project practice
 
 ## Repository Structure
 
 ```text
 .
-├── Conditionals/              # Maven project for conditional-statement exercises
-├── LOGIN ACCESS CHECK SYSTEM/ # Simple login-access practice program
-├── Qbit/                      # Additional Java practice programs
+├── Conditionals/                  # Maven project for conditional-statement exercises
+├── Data Structures Practicals/    # GPA and student-report practical
+├── LOGIN ACCESS CHECK SYSTEM/     # Username and password validation exercise
+├── Trials/                        # Additional Java experiments and practice programs
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-## Requirements
+## Main Practical: GPAHub
 
-- A JDK compatible with the version configured in `Conditionals/pom.xml`
-- Apache Maven for building the Maven project
-- A code editor or IDE such as IntelliJ IDEA, Eclipse, or VS Code
+`Data Structures Practicals/GPAHub.java` is a console-based student learning management system. It demonstrates:
 
-## Running the Maven Project
+- Student and course record modeling with nested classes
+- `ArrayList` and `HashSet` collections
+- Duplicate student-ID detection
+- Validation for names, IDs, course details, credit hours, and scores
+- Weighted averages and GPA calculations
+- Letter grades, pass/fail status, and honors classification
+- Formatted student reports
 
-From the repository root:
+Run it from the repository root with:
+
+```bash
+javac "Data Structures Practicals/GPAHub.java"
+java -cp "Data Structures Practicals" GPAHub
+```
+
+## Maven Project
+
+The `Conditionals` directory contains a Maven project configured for the `Conditionals` main class.
 
 ```bash
 cd Conditionals
-mvn clean compile
+mvn compile
 mvn exec:java
 ```
 
-You can also open the `Conditionals` directory in an IDE and run the configured main class.
+The project currently contains conditional-statement and switch-statement practice. Some examples are still being developed and may require completion before the entire project compiles successfully.
 
-## Running Standalone Programs
+## Standalone Exercises
 
-Compile and run a Java file from its directory with:
+The login exercise can be compiled and run from the repository root with:
+
+```bash
+javac "LOGIN ACCESS CHECK SYSTEM/LoginAccessCheck.java"
+java -cp "LOGIN ACCESS CHECK SYSTEM" LoginAccessCheck
+```
+
+For other standalone files, compile the file and run its class from the relevant directory:
 
 ```bash
 javac FileName.java
@@ -52,9 +76,15 @@ java FileName
 
 Some exercises use packages, so run them from the appropriate source root or use your IDE's run configuration.
 
+## Requirements
+
+- A JDK compatible with the version configured in `Conditionals/pom.xml`
+- Apache Maven for the Maven project
+- A code editor or IDE such as IntelliJ IDEA, Eclipse, or VS Code
+
 ## Learning Approach
 
-Each exercise is intentionally small and focused. The repository will grow over time as new Java concepts, examples, and practical challenges are added.
+Each exercise is intentionally small and focused. The repository will grow over time as new Java concepts, examples, data-structure exercises, and practical challenges are added.
 
 ## Contributing
 
