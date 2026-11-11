@@ -5,7 +5,7 @@ public class LoginAccessCheck {
 
         try (Scanner input = new Scanner(System.in)) {
             String correctUsername = "admin";
-            String correctPassword = "12345";
+            String correctPassword = "10249";
             
             System.out.print("Enter username: ");
             String username = input.nextLine();
