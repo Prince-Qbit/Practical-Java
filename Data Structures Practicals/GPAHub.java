@@ -48,7 +48,7 @@ public class GPAHub {
         String level = readRequiredText(scanner, "Student level: ");
         String program = readRequiredText(scanner, "Student program: ");
         int courseCount = readPositiveInt(scanner, "Number of courses: ");
-        List<CourseResult> courses = new ArrayList<>();
+        List<CourseResult> courses = new <>();
 
         for (int i = 1; i <= courseCount; i++) {
             System.out.println("Course " + i);
