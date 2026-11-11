@@ -4,7 +4,7 @@ public class Ticket_Pricing {
 
 	if (age <= 5);
 	System.out.print ("Free");
-	else (= 17);
+	else if (= 17);
 	System.out.print ("GHS 10");
 }
 } 
