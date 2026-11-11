@@ -11,6 +11,6 @@ public class Profile {
 						 + "I aspire " + careerGoal + "."
 						 + "I am studying Java because " + reasonForLearningJava + ".");
 
-		System.out.println (paragraph);
+		System.out.println (paragraph
 	}
 }eee
