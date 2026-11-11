@@ -7,7 +7,7 @@ public class Scanner {
 		int x = sc.nextInt ();
 		System.out.println  ("Second number? ");
 		int y = sc.nextInt ();
-		System.out.println ("Sum = " + (x + y));
+		System.out.println ("Sum = " + ());
 		sc.close ();
 	}
 }
