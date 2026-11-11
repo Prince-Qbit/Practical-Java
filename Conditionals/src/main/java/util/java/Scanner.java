@@ -8,6 +8,6 @@ package util.java;
  *
  * @author User
  */
-public class scanner {
+public class Scanner {
     
 }
